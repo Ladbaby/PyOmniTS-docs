@@ -16,6 +16,19 @@ Boyuan Li, Yicheng Luo, Zhen Liu, Junhao Zheng, Jianming Lv, Qianli Ma†
 - **OpenReview**: https://openreview.net/forum?id=u8wRbX2r2V
 - **arXiv**: https://arxiv.org/abs/2505.17431
 
+### Citation
+
+```
+@inproceedings{li_HyperIMTSHypergraphNeural_2025,
+    author = {Li, Boyuan and Luo, Yicheng and Liu, Zhen and Zheng, Junhao and Lv, Jianming and Ma, Qianli},
+    booktitle = {Forty-Second International Conference on Machine Learning},
+    title = {HyperIMTS: Hypergraph Neural Network for Irregular Multivariate Time Series Forecasting},
+    year = {2025}
+}
+```
+
+<!-- truncate -->
+
 ### Highlights
 
 - We propose a new **hypergraph modeling approach** to represent both observed values and their dependencies in IMTS, which **does not require padding** and **remains extensible for dependency learning**.
@@ -32,14 +45,3 @@ Observed values are converted as nodes in the hypergraph, interconnected by temp
 Through irregularity-aware message passing, HyperIMTS captures variable dependencies in a time-adaptive way to achieve accurate forecasting. 
 Experiments demonstrate HyperIMTS's competitive performance among state-of-the-art models in IMTS forecasting with low computational cost.
 Our code is available at https://github.com/qianlima-lab/PyOmniTS.
-
-### Citation
-
-```
-@inproceedings{li_HyperIMTSHypergraphNeural_2025,
-    author = {Li, Boyuan and Luo, Yicheng and Liu, Zhen and Zheng, Junhao and Lv, Jianming and Ma, Qianli},
-    booktitle = {Forty-Second International Conference on Machine Learning},
-    title = {HyperIMTS: Hypergraph Neural Network for Irregular Multivariate Time Series Forecasting},
-    year = {2025}
-}
-```

@@ -14,6 +14,19 @@ Boyuan Li, Zhen Liu, Yicheng Luo, Qianli Ma†
 
 - **OpenReview**: https://openreview.net/forum?id=JEIDxiTWzB
 
+### Citation
+
+```
+@inproceedings{li_LearningRecursiveMultiScale_2026,
+    author = {Li, Boyuan and Liu, Zhen and Luo, Yicheng  and Ma, Qianli},
+    booktitle = {International Conference on Learning Representations},
+    title = {Learning Recursive Multi-Scale Representations for Irregular Multivariate Time Series Forecasting},
+    year = {2026}
+}
+```
+
+<!-- truncate -->
+
 ### Highlights
 
 - We introduce **recursive splitting** based on time periods for IMTS samples to **preserve the original sampling patterns** across all scale levels, and leverage IMTS backbones to capture dependencies in different time periods as multi-scale representations.
@@ -30,14 +43,3 @@ Instead of resampling, ReIMTS keeps timestamps unchanged and recursively splits 
 Based on the original sampling timestamps in these long-to-short subsamples, an irregularity-aware representation fusion mechanism is proposed to capture global-to-local dependencies for accurate forecasting.
 Extensive experiments demonstrate an average performance improvement of 29.1\% in the forecasting task across different models and real-world datasets.
 Our code is available at https://github.com/Ladbaby/PyOmniTS.
-
-### Citation
-
-```
-@inproceedings{li_LearningRecursiveMultiScale_2026,
-    author = {Li, Boyuan and Liu, Zhen and Luo, Yicheng  and Ma, Qianli},
-    booktitle = {International Conference on Learning Representations},
-    title = {Learning Recursive Multi-Scale Representations for Irregular Multivariate Time Series Forecasting},
-    year = {2026}
-}
-```
