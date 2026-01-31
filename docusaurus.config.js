@@ -145,10 +145,10 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                label: 'Docs on GitHub',
-                href: 'https://github.com/Ladbaby/PyOmniTS-docs',
-              },
+            //   {
+            //     label: 'Docs on GitHub',
+            //     href: 'https://github.com/Ladbaby/PyOmniTS-docs',
+            //   },
             ],
           },
         ],
