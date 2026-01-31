@@ -22,11 +22,11 @@ function HomepageHeader() {
             to="/docs/intro">
             🚀 Get Started
           </Link>
-          {/* <Link
-            className="button button--primary button--lg"
-            to="https://github.com/Ladbaby/PyOmniTS">
-            PyOmniTS on Github
-          </Link> */}
+          <Link
+            className={clsx("button button--primary button--lg", styles.githubButton)}
+            to="/blog">
+            📰 Our Work
+          </Link>
         </div>
       </div>
     </header>
