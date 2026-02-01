@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>PyOmniTS Blog</title>
+        <link>https://Ladbaby.github.io/PyOmniTS-docs/blog</link>
+        <description>PyOmniTS Blog</description>
+        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[ICLR 2026]]></title>
+            <link>https://Ladbaby.github.io/PyOmniTS-docs/blog/iclr-2026</link>
+            <guid>https://Ladbaby.github.io/PyOmniTS-docs/blog/iclr-2026</guid>
+            <pubDate>Mon, 26 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Learning Recursive Multi-Scale Representations for Irregular Multivariate Time Series Forecasting]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-recursive-multi-scale-representations-for-irregular-multivariate-time-series-forecasting">Learning Recursive Multi-Scale Representations for Irregular Multivariate Time Series Forecasting<a href="https://ladbaby.github.io/PyOmniTS-docs/blog/iclr-2026#learning-recursive-multi-scale-representations-for-irregular-multivariate-time-series-forecasting" class="hash-link" aria-label="Direct link to Learning Recursive Multi-Scale Representations for Irregular Multivariate Time Series Forecasting" title="Direct link to Learning Recursive Multi-Scale Representations for Irregular Multivariate Time Series Forecasting" translate="no">​</a></h2>
+<p>Boyuan Li, Zhen Liu, Yicheng Luo, Qianli Ma†</p>
+<p><img decoding="async" loading="lazy" src="https://ladbaby.github.io/PyOmniTS-docs/assets/images/model_architecture-cce2115bf615d94ed6af6a6b14d2ec15.png" width="3458" height="1644" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="links">Links<a href="https://ladbaby.github.io/PyOmniTS-docs/blog/iclr-2026#links" class="hash-link" aria-label="Direct link to Links" title="Direct link to Links" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>OpenReview</strong>: <a href="https://openreview.net/forum?id=JEIDxiTWzB" target="_blank" rel="noopener noreferrer" class="">https://openreview.net/forum?id=JEIDxiTWzB</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="citation">Citation<a href="https://ladbaby.github.io/PyOmniTS-docs/blog/iclr-2026#citation" class="hash-link" aria-label="Direct link to Citation" title="Direct link to Citation" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@inproceedings{li_LearningRecursiveMultiScale_2026,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    author = {Li, Boyuan and Liu, Zhen and Luo, Yicheng  and Ma, Qianli},</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    booktitle = {International Conference on Learning Representations},</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    title = {Learning Recursive Multi-Scale Representations for Irregular Multivariate Time Series Forecasting},</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    year = {2026}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="highlights">Highlights<a href="https://ladbaby.github.io/PyOmniTS-docs/blog/iclr-2026#highlights" class="hash-link" aria-label="Direct link to Highlights" title="Direct link to Highlights" translate="no">​</a></h3>
+<ul>
+<li class="">We introduce <strong>recursive splitting</strong> based on time periods for IMTS samples to <strong>preserve the original sampling patterns</strong> across all scale levels, and leverage IMTS backbones to capture dependencies in different time periods as multi-scale representations.</li>
+<li class="">We propose <strong>ReIMTS</strong>, a recursive multi-scale method for IMTS forecasting. Using irregularity-aware representation fusion, it recursively captures global-to-local dependencies and provides accurate predictions.</li>
+<li class="">Extensive experiments including twenty-six baseline methods and five IMTS datasets on IMTS forecasting are conducted. Tested on six IMTS backbones, ReIMTS consistently boosts their forecasting performance in all settings while maintaining good efficiency.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="abstract">Abstract<a href="https://ladbaby.github.io/PyOmniTS-docs/blog/iclr-2026#abstract" class="hash-link" aria-label="Direct link to Abstract" title="Direct link to Abstract" translate="no">​</a></h3>
+<p>Irregular Multivariate Time Series (IMTS) are characterized by uneven intervals between consecutive timestamps, which carry sampling pattern information valuable and informative for learning temporal and variable dependencies.
+In addition, IMTS often exhibit diverse dependencies across multiple time scales.
+However, many existing multi-scale IMTS methods use resampling to obtain the coarse series, which can alter the original timestamps and disrupt the sampling pattern information.
+To address the challenge, we propose ReIMTS, a <strong>R</strong>cursive multi-scale modeling approach for <strong>I</strong>rregular <strong>M</strong>ultivariate <strong>T</strong>ime <strong>S</strong>eries forecasting.
+Instead of resampling, ReIMTS keeps timestamps unchanged and recursively splits each sample into subsamples with progressively shorter time periods.
+Based on the original sampling timestamps in these long-to-short subsamples, an irregularity-aware representation fusion mechanism is proposed to capture global-to-local dependencies for accurate forecasting.
+Extensive experiments demonstrate an average performance improvement of 29.1% in the forecasting task across different models and real-world datasets.
+Our code is available at <a href="https://github.com/Ladbaby/PyOmniTS" target="_blank" rel="noopener noreferrer" class="">https://github.com/Ladbaby/PyOmniTS</a>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ICML 2025]]></title>
+            <link>https://Ladbaby.github.io/PyOmniTS-docs/blog/icml-2025</link>
+            <guid>https://Ladbaby.github.io/PyOmniTS-docs/blog/icml-2025</guid>
+            <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[HyperIMTS: Hypergraph Neural Network for Irregular Multivariate Time Series Forecasting]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hyperimts-hypergraph-neural-network-for-irregular-multivariate-time-series-forecasting">HyperIMTS: Hypergraph Neural Network for Irregular Multivariate Time Series Forecasting<a href="https://ladbaby.github.io/PyOmniTS-docs/blog/icml-2025#hyperimts-hypergraph-neural-network-for-irregular-multivariate-time-series-forecasting" class="hash-link" aria-label="Direct link to HyperIMTS: Hypergraph Neural Network for Irregular Multivariate Time Series Forecasting" title="Direct link to HyperIMTS: Hypergraph Neural Network for Irregular Multivariate Time Series Forecasting" translate="no">​</a></h2>
+<p>Boyuan Li, Yicheng Luo, Zhen Liu, Junhao Zheng, Jianming Lv, Qianli Ma†</p>
+<p><img decoding="async" loading="lazy" src="https://ladbaby.github.io/PyOmniTS-docs/assets/images/hypergraph_representation-b95b8e93356591374f199d6c43de9e91.png" width="3518" height="1505" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="links">Links<a href="https://ladbaby.github.io/PyOmniTS-docs/blog/icml-2025#links" class="hash-link" aria-label="Direct link to Links" title="Direct link to Links" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>poster</strong>: <a href="https://icml.cc/virtual/2025/poster/43741" target="_blank" rel="noopener noreferrer" class="">https://icml.cc/virtual/2025/poster/43741</a></li>
+<li class=""><strong>OpenReview</strong>: <a href="https://openreview.net/forum?id=u8wRbX2r2V" target="_blank" rel="noopener noreferrer" class="">https://openreview.net/forum?id=u8wRbX2r2V</a></li>
+<li class=""><strong>arXiv</strong>: <a href="https://arxiv.org/abs/2505.17431" target="_blank" rel="noopener noreferrer" class="">https://arxiv.org/abs/2505.17431</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="citation">Citation<a href="https://ladbaby.github.io/PyOmniTS-docs/blog/icml-2025#citation" class="hash-link" aria-label="Direct link to Citation" title="Direct link to Citation" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@inproceedings{li_HyperIMTSHypergraphNeural_2025,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    author = {Li, Boyuan and Luo, Yicheng and Liu, Zhen and Zheng, Junhao and Lv, Jianming and Ma, Qianli},</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    booktitle = {Forty-Second International Conference on Machine Learning},</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    title = {HyperIMTS: Hypergraph Neural Network for Irregular Multivariate Time Series Forecasting},</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    year = {2025}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="highlights">Highlights<a href="https://ladbaby.github.io/PyOmniTS-docs/blog/icml-2025#highlights" class="hash-link" aria-label="Direct link to Highlights" title="Direct link to Highlights" translate="no">​</a></h3>
+<ul>
+<li class="">We propose a new <strong>hypergraph modeling approach</strong> to represent both observed values and their dependencies in IMTS, which <strong>does not require padding</strong> and <strong>remains extensible for dependency learning</strong>.</li>
+<li class="">Based on the hypergraph representation, we propose <strong>HyperIMTS</strong>, a hypergraph neural network for the IMTS forecasting task. It leverages timestamp information preserved in the graph to adaptively capture both time-aware and overall variable dependencies, enabling irregularity-aware learning and accurate forecasting.</li>
+<li class="">We build a unified, extensible, and highly flexible code pipeline for fair IMTS forecasting benchmarking across time series models from various fields and tasks, covering twenty-seven state-of-the-art models and five IMTS datasets. Extensive empirical results demonstrate the low forecast error and high efficiency of HyperIMTS.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="abstract">Abstract<a href="https://ladbaby.github.io/PyOmniTS-docs/blog/icml-2025#abstract" class="hash-link" aria-label="Direct link to Abstract" title="Direct link to Abstract" translate="no">​</a></h3>
+<p>Irregular multivariate time series (IMTS) are characterized by irregular time intervals within variables and unaligned observations across variables, posing challenges in learning temporal and variable dependencies.
+Many existing IMTS models either require padded samples to learn separately from temporal and variable dimensions, or represent original samples via bipartite graphs or sets.
+However, the former approaches often need to handle extra padding values affecting efficiency and disrupting original sampling patterns, while the latter ones have limitations in capturing dependencies among unaligned observations.
+To represent and learn both dependencies from original observations in a unified form, we propose HyperIMTS, a <strong>Hyper</strong>graph neural network for <strong>I</strong>rregular <strong>M</strong>ultivariate <strong>T</strong>ime <strong>S</strong>eries forecasting.
+Observed values are converted as nodes in the hypergraph, interconnected by temporal and variable hyperedges to enable message passing among all observations.
+Through irregularity-aware message passing, HyperIMTS captures variable dependencies in a time-adaptive way to achieve accurate forecasting.
+Experiments demonstrate HyperIMTS's competitive performance among state-of-the-art models in IMTS forecasting with low computational cost.
+Our code is available at <a href="https://github.com/qianlima-lab/PyOmniTS" target="_blank" rel="noopener noreferrer" class="">https://github.com/qianlima-lab/PyOmniTS</a>.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

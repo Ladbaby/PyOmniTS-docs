@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkpy_omni_ts_docs=globalThis.webpackChunkpy_omni_ts_docs||[]).push([[866],{322(o){o.exports=JSON.parse('{"metadata":{"permalink":"/PyOmniTS-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkpy_omni_ts_docs=globalThis.webpackChunkpy_omni_ts_docs||[]).push([[903],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/PyOmniTS-docs/blog","blogTitle":"Blog","authorsListPath":"/PyOmniTS-docs/blog/authors"}')}}]);
