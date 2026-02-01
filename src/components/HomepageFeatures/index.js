@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Extensibility',
+    title: '🧩 Extensibility',
     // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
@@ -17,7 +17,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Maintainability',
+    title: '🔧 Maintainability',
     // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -26,7 +26,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Efficiency',
+    title: '🚀 Efficiency',
     // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
