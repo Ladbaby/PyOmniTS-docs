@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'PyOmniTS',
   tagline: 'A Researcher-Friendly Framework for Time Series Analysis.',
-  favicon: '/img/icon_light.png',
+  favicon: '/img/logo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -79,7 +79,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/icon_light.png',
+      image: 'img/logo.png',
       colorMode: {
         respectPrefersColorScheme: true,
       },
@@ -87,7 +87,7 @@ const config = {
         title: 'PyOmniTS',
         logo: {
           alt: 'PyOmniTS Logo',
-          src: 'img/icon_light.png',
+          src: 'img/logo.png',
         },
         items: [
           {

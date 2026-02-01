@@ -12,6 +12,11 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        <img 
+            style={{ width: "200px" }}
+            src='/img/logo.png'
+            alt="PyOmniTS Logo"
+        />
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
