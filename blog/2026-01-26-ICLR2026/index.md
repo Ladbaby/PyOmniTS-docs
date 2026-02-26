@@ -13,6 +13,7 @@ Boyuan Li, Zhen Liu, Yicheng Luo, Qianli Ma†
 ### Links
 
 - **OpenReview**: https://openreview.net/forum?id=JEIDxiTWzB
+- **arXiv**: https://arxiv.org/abs/2602.21498
 
 ### Citation
 
